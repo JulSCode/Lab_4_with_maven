@@ -1,31 +1,31 @@
 package org.example;
 /**
- * The class stores information about a person
+ * The class stores information about a human
  */
 public class Human
 {
     /**
-     * ID of person
+     * ID of human
      */
     private int ID;
     /**
-     * Name of person
+     * Name of human
      */
     private String name;
     /**
-     * Gender of person
+     * Gender of human
      */
     private String gender;
     /**
-     * Subdivision of person
+     * Subdivision of human
      */
     private Subdivision subdivision;
     /**
-     * Salary of person
+     * Salary of human
      */
     private float salary;
     /**
-     * Birthday of person
+     * Birthday of human
      */
     private String birthday;
     public Human(String ID, String name, String gender, String birthday, String title, String salary) {
@@ -37,106 +37,106 @@ public class Human
         this.birthday = birthday;
     }
     /**
-     * Method for setting birthday of person
+     * Method for setting birthday of human
      * @param birthday new date of birth
      */
     public void setBirthday(String birthday) {
         this.birthday = birthday;
     }
     /**
-     * Method for setting gender of person
-     * @param gender new gender of person
+     * Method for setting gender of human
+     * @param gender new gender of human
      */
     public void setGender(String gender) {
         this.gender = gender;
     }
     /**
-     * Method for setting ID of person
-     * @param ID new ID of person
+     * Method for setting ID of human
+     * @param ID new ID of human
      */
     public void setID(int ID) {
         this.ID = ID;
     }
     /**
-     * Method for setting name of person
-     * @param name new name of person
+     * Method for setting name of human
+     * @param name new name of human
      */
     public void setName(String name) {
         this.name = name;
     }
     /**
-     * Method for setting salary of person
-     * @param salary new salary of person
+     * Method for setting salary of human
+     * @param salary new salary of human
      */
     public void setSalary(float salary) {
         this.salary = salary;
     }
     /**
-     * Method for setting subdivision of person
-     * @param subdivision new subdivision of person
+     * Method for setting subdivision of human
+     * @param subdivision new subdivision of human
      */
     public void setSubdivision(Subdivision subdivision) {
         this.subdivision = subdivision;
     }
     /**
-     * Method for setting subdivision of person
-     * @param subdivision new title of subdivision of person
+     * Method for setting subdivision of human
+     * @param subdivision new title of subdivision of human
      */
     public void setSubdivision(String subdivision) {
         this.subdivision.setTitle(subdivision);
     }
     /**
-     * Method for getting the salary of person
-     * @return salary of person
+     * Method for getting the salary of human
+     * @return salary of human
      */
     public float getSalary() {
         return salary;
     }
     /**
-     * Method for getting the ID of person
-     * @return ID of person
+     * Method for getting the ID of human
+     * @return ID of human
      */
     public int getID() {
         return ID;
     }
     /**
-     * Method for getting the birthday of person
-     * @return birthday of person
+     * Method for getting the birthday of human
+     * @return birthday of human
      */
     public String getBirthday() {
         return birthday;
     }
     /**
-     * Method for getting the gender of person
-     * @return gender of person
+     * Method for getting the gender of human
+     * @return gender of human
      */
     public String getGender() {
         return gender;
     }
     /**
-     * Method for getting the name of person
-     * @return name of person
+     * Method for getting the name of human
+     * @return name of human
      */
     public String getName() {
         return name;
     }
     /**
-     * Method for getting the subdivision of person
-     * @return subdivision of person
+     * Method for getting the subdivision of human
+     * @return subdivision of human
      */
     public Subdivision getSubdivision() {
         return subdivision;
     }
     /**
      * Method outputs complete information
-     * about a person in a special format
+     * about a human in a special format
      */
     public void printDataPerson() {
         System.out.format("%-10s%-30s%-10s%-10s%-12s%-10s",ID,name,gender,subdivision.printSubdivision(),birthday,salary);
     }
     /**
      * Method outputs complete information
-     * about a person without format
+     * about a human without format
      */
     public void printDataPersonWithoutFormat() {
         System.out.print(ID+" ");
